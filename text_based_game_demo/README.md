@@ -1,8 +1,11 @@
-### C++ (Fall 2020)
+## Project Description
+###### C++ (Fall 2020)
 
 This project was an open-ended display of everything we worked on in CS1 from 
 file I/O to vectors to pointers. I decided to make a text-based videogame I called
 "Ask For Directions"
+
+### Files
 
 #### main.cpp 
 Driver code for the whole game. 
