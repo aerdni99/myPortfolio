@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script id="vertex-shader" type="x-shader/x-vertex">
+            attribute vec4 vPosition;
+            attribute vec4 color;
+            varying vec4 vColor;
+
+            uniform mat4 scalar;
+            uniform mat4 translation;
+            uniform mat4 ortho;
+            uniform mat4 yRot;
+
+            uniform mat4 toJoint;
+            uniform mat4 zRot;
+            uniform mat4 inverseToJoint;
+
+            uniform mat4 initColor;
+
+
+            void main(){
+                vec4 movetoJoint = scalar * toJoint * vPosition;
+                vec4 zRotate = zRot * movetoJoint;
+                vec4 putBack = inverseToJoint * zRotate;
+                vec4 preRot = ortho * translation * putBack;
+                gl_Position = yRot * preRot;
+                vColor = initColor * color;
+            }
+        </script>
+        <script id="fragment-shader" type="x-shader/x-fragment">
+            precision mediump float;
+            varying vec4 vColor;
+            void main(){
+                gl_FragColor = vColor;
+            }
+        </script>
+        <script type="text/javascript" src="Common/webgl-utils.js"></script>
+        <script type="text/javascript" src="Common/initShaders.js"></script>
+        <script type="text/javascript" src="Common/MV.js"></script>
+        <script type="text/javascript" src="Robot.js"></script>
+
+    </head>
+    <body>
+
+        <text>
+            Menu:<br>
+            b - blink<br>
+            t - turn 360 degrees<br>
+            j - jump<br>
+            c - change color<br>
+            w - wave arms<br>
+            q - quit<br>
+        </text>
+
+        <canvas id="gl-canvas" width="800" height="800">
+            Oops ... your browser doesn't support the HTML5 canvas element
+        </canvas>
+    </body>
+</html>
+
