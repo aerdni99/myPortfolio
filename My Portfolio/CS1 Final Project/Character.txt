@@ -1,8 +1,0 @@
-gender
-male female
-hair
-red blonde brown black
-height (inches)
-60 76
-weight (pounds)
-100 250
