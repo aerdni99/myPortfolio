@@ -1,0 +1,5 @@
+1  Clementine   	  Your best friend
+2  Trusty Sword         Your best weapon, destroys enemies
+3  Hefty Shield         The best shield money can buy
+4  Arbitrary Supplies   Heals everything, non-consumable
+5  rolling pin  	  slightly charred
