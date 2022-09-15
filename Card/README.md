@@ -1,6 +1,5 @@
-Java (spring 2022)
-
-This is the first and only experience I have so far coding in Java.
+## Deck Shuffling
+##### Java (spring 2022)
 
 The task was to make a list and populate it with all 52 playing cards.
 Shuffle the deck, then sort by rank, and lastly sort by suit and rank.
