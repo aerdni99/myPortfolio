@@ -8,3 +8,5 @@ an interactive videogame or a graphics engine. I chose to make a game in
 Final.html - Creates the canvas and associates Final.js's script.
 
 Final.js - Where the magic happens. color and vertex array loading, requesting animation frames...
+
+Common/ - Shader and utility files provided by my professor.
