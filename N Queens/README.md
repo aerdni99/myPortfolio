@@ -12,4 +12,4 @@ State.cpp - Implementation of my class "State" which represents the board and ca
 
 State.hpp - Header file for State class.
 
-input.csv - p\Properly formatted imput file.
+input.csv - Properly formatted imput file.
