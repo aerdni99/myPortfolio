@@ -8,6 +8,8 @@ to extend and read.
 The latest version here includes extension point handlers, and multiple
 programs that use the parser class.
 
+### Files
+
 ClassDiagram.txt - formatted for a website called yuml.me. It produces
 		   a class diagram I wrote of the XMLParser.
 
@@ -44,7 +46,7 @@ xmlStats.cpp - program that uses my XMLParser to count different parts of XML
 srcFacts(original).txt - contains the original srcFacts program that we have
 			 been redesigning.
 
-Below is a description of the srcFacts.cpp program written by my professor.
+### Below is a description of the srcFacts.cpp program written by my professor.
 
 -----
 
